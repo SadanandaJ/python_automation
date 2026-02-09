@@ -1,12 +1,12 @@
 How to Use These Scripts\
 Step 1: Setup\
 Copy# Install required packages\
-pip install -r requirements.txt\
+pip install -r requirements.txt
 
-# Make scripts executable\
+# Make scripts executable
 chmod +x build_automation.py deploy_to_k8s.py\
 Step 2: Configure\
-Edit build_config.json with your settings:\
+Edit build_config.json with your settings:
 
 Docker registry URL\
 Application name and port\
@@ -15,7 +15,7 @@ Environment variables\
 Step 3: Run Build\
 Copy# Run the build automation\
 python build_automation.py\
-This will:\
+This will:
 
 ✅ Run unit tests\
 🐳 Build Docker image\
@@ -33,4 +33,4 @@ Registry Push: Pushes images to your container registry\
 K8s Manifest Generation: Auto-generates deployment and service YAML\
 Build Metadata: Tracks build information for auditing\
 Error Handling: Graceful failures with clear error messages\
-CI/CD Ready: Easy integration with Jenkins, GitLab, GitHub Actions\
+CI/CD Ready: Easy integration with Jenkins, GitLab, GitHub Actions
